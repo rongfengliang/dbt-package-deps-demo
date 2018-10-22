@@ -1,0 +1,37 @@
+default:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: 127.0.0.1
+      user: postgres
+      pass: password
+      port: 5432
+      dbname: gitlabhq_production
+      schema: public
+      threads: 3
+pg:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: 127.0.0.1
+      user: postgres
+      pass: password
+      port: 5433
+      dbname: gitlabhq_production
+      schema: public
+      threads: 3
+
+demo:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: 127.0.0.1
+      user: root
+      pass: password
+      port: 5432
+      dbname: dbt
+      schema: public
+      threads: 3

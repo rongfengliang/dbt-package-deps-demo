@@ -1,0 +1,22 @@
+name: 'rong'
+version: '1.0'
+profile: 'demo'
+source-paths: ["models"]
+analysis-paths: ["analysis"] 
+test-paths: ["tests"]
+data-paths: ["data"]
+macro-paths: ["macros"]
+
+target-path: "target"  # directory which will store compiled SQL files
+clean-targets:         # directories to be removed by `dbt clean`
+    - "target"
+    - "dbt_modules"
+repositories:
+  - https://gitlab.com/dalongrong/dbt-gitlab-demo.git
+models:
+  rong:
+      core:
+          materialized: view
+  gitlab:
+      enabled: true
+      materialized: view

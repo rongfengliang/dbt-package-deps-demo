@@ -1,0 +1,1 @@
+select *  from {{ref("gitlab_project_counts")}}
