@@ -25,3 +25,17 @@ content profiels/sample-profile.yaml
 ```code
 http://localhost:8090/v1alpha1/graphql
 ```
+
+## docs
+
+* generate docs
+
+```code
+dbt docs generate
+```
+
+* serve docs
+
+```code
+dbt docs serve
+```
